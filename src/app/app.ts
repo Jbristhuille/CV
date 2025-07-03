@@ -1,3 +1,10 @@
+/*****************************************************************************
+ * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
+ * @CreatedDate           : 2025-07-03 21:09:09                              *
+ * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
+ * @LastEditDate          : 2025-07-03 21:09:15                              *
+ ****************************************************************************/
+
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
@@ -8,5 +15,4 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.scss'
 })
 export class App {
-  protected title = 'cv';
 }

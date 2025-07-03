@@ -1,12 +1,15 @@
 {
   "name": "cv",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "A simple Angular web CV",
+  "author": {
+    "name": "Your Name",
+    "email": "jean-baptiste@halfsquare.fr"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "build": "ng build"
   },
   "prettier": {
     "overrides": [
