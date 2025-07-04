@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-04 18:48:52                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-04 19:00:44                              *
+ * @LastEditDate          : 2025-07-04 19:12:13                              *
  ****************************************************************************/
 
 @import "../../../variables.scss";
@@ -28,7 +28,7 @@
 
         .item-date {
           display: flex;
-          gap: $pad-light;
+          gap: $pad-small;
         }
       }
 
