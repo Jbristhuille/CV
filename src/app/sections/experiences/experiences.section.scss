@@ -1,0 +1,58 @@
+/*****************************************************************************
+ * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
+ * @CreatedDate           : 2025-07-04 18:48:52                              *
+ * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
+ * @LastEditDate          : 2025-07-04 19:16:35                              *
+ ****************************************************************************/
+
+@import "../../../variables.scss";
+
+.section-experiences {
+  h3 {
+    margin-bottom: $pad-light;
+  }
+
+  .experiences-list {
+    display: flex;
+    flex-direction: column;
+    gap: $pad-med;
+
+    .experience-item {
+      width: 100%;
+
+      .item-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: $pad-small;
+
+        .item-date {
+          display: flex;
+          gap: $pad-small;
+
+          span {
+            font-weight: 500;
+          }
+        }
+      }
+
+      .item-content {
+        display: flex;
+        flex-direction: column;
+        gap: $pad-small;
+        margin-top: $pad-small;
+
+        ul {
+          padding-left: $pad-med;
+          margin-bottom: $pad-med;
+        }
+      }
+
+      .item-skills {
+        display: flex;
+        gap: $pad-small;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

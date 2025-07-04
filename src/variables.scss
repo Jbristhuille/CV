@@ -1,0 +1,58 @@
+/*****************************************************************************
+ * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
+ * @CreatedDate           : 2024-02-26 16:39:19                              *
+ * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
+ * @LastEditDate          : 2025-07-04 15:05:36                              *
+ ****************************************************************************/
+
+/* SUMMARY
+  * Padding
+  * Fonts
+  * Colors
+  * Other
+  * Responsive
+*/
+
+/* Padding */
+$pad-small: 8px;
+$pad-light: 16px;
+$pad-med: 34px;
+$pad-high: 64px;
+$pad-big: 128px;
+$pad-big-2: 248px;
+/***/
+
+/* Fonts */
+$fs-default: 14px;
+$fs-med: 12px;
+$fs-small: 9px;
+$fs-big: 128px;
+$fs-h1: 48px;
+$fs-h2: 34px;
+$fs-h3: 24px;
+$fs-h4: 18px;
+$font-fam: "Work Sans", sans-serif;
+/***/
+
+/* Colors */
+$c-black: #34373C;
+$c-green-dark: #161718;
+$c-green-light: #5aa358;
+$c-green-white: #020303;
+$c-green-grey: #9B9FA6;
+$c-white: #fff;
+$c-danger: #de2828;
+$c-success: #44c253;
+$c-grey: #e3e3e3;
+$c-gradient: linear-gradient(89.52deg, #68B952 3.34%, #52ADB9 66.83%, #5A52B9 94.29%);
+/***/
+
+/* Other */
+$trans: ease 0.4s;
+$shadow: 2px 2px 8px rgba($c-green-light, 0.3);
+/***/
+
+/* Responsive */
+$res-med: 1200px;
+$res-small: 530px;
+/***/

@@ -2,15 +2,15 @@
 * @Author                : Jbristhuille<jbristhuille@gmail.com>
 * @CreatedDate           : 2025-07-04 13:49:00
 * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>
-* @LastEditDate          : 2025-07-04 13:54:14
+* @LastEditDate          : 2025-07-04 19:07:01
 -->
 
 <div class="section-skills">
-  <h3>{{"SKILLS" | translate}}</h3>
+  <h3 class="gradient">{{"SKILLS" | translate}}</h3>
 
   <div class="skills-list">
-    <div *ngFor="let item of skills">
-      <b>{{item.title | translate}}</b>
+    <div class="skill-item" *ngFor="let item of skills">
+      <b>{{item.title | translate}}:</b>
       <p>{{item.skills.join(", ")}}</p>
     </div>
   </div>

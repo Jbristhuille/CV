@@ -2,22 +2,30 @@
 * @Author                : Jbristhuille<jbristhuille@gmail.com>
 * @CreatedDate           : 2025-07-03 21:28:00
 * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>
-* @LastEditDate          : 2025-07-04 13:46:41
+* @LastEditDate          : 2025-07-04 18:59:58
 -->
 
 <div class="section-experiences">
-  <h3>{{"EXPERIENCES" | translate}}</h3>
+  <h3 class="gradient">{{"EXPERIENCES" | translate}}</h3>
 
   <div class="experiences-list">
-    <div *ngFor="let item of xp">
-      <h4>{{item.title | translate}}</h4>
+    <div *ngFor="let item of xp" class="experience-item">
+      <div class="item-header">
+        <h4>{{item.title | translate}}</h4>
 
-      <div>
-        <span>{{item.endDate ? "FROM" : "SINCE" | translate}} {{item.startDate | translate}}</span>
-        <span *ngIf="item.endDate">{{"TO" | translate}} {{item.endDate | translate}}</span>
+        <div class="item-date">
+          <span>{{(item.endDate ? "FROM" : "SINCE") | translate}} {{item.startDate | translate}}</span>
+
+          <ng-container *ngIf="item.endDate">
+            <span>-</span>
+            <span>{{"TO" | translate}} {{item.endDate | translate}}</span>
+          </ng-container>
+        </div>
       </div>
 
-      <div>
+      <b>{{item.company}}</b>
+
+      <div class="item-content">
         <p>{{item.context | translate}}</p>
         <p>{{item.description | translate}}</p>
 
@@ -26,7 +34,7 @@
         </ul>
       </div>
 
-      <div>
+      <div class="item-skills">
         <b>Stack:</b>
 
         <p>{{item.stack.join(', ')}}</p>
