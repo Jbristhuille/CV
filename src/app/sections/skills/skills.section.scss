@@ -1,0 +1,17 @@
+/*****************************************************************************
+ * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
+ * @CreatedDate           : 2025-07-04 19:04:08                              *
+ * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
+ * @LastEditDate          : 2025-07-04 19:07:52                              *
+ ****************************************************************************/
+
+@import "../../../variables.scss";
+
+.section-skills {
+  .skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: $pad-small;
+    margin-top: $pad-small;
+  }
+}
