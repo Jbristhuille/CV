@@ -15,10 +15,25 @@
   color: $c-black;
 }
 
-h1 { font-size: $fs-h1; }
-h2 { font-size: $fs-h2; }
-h3 { font-size: $fs-h3; }
-h4 { font-size: $fs-h4; }
+h1 {
+  font-size: $fs-h1;
+  width: fit-content;
+}
+
+h2 {
+  font-size: $fs-h2;
+  width: fit-content;
+}
+
+h3 {
+  font-size: $fs-h3;
+  width: fit-content;
+}
+
+h4 {
+  font-size: $fs-h4;
+  width: fit-content;
+}
 
 .gradient {
   background: $c-gradient;

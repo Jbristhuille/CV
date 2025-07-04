@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-03 21:28:39                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-04 13:40:52                              *
+ * @LastEditDate          : 2025-07-04 18:58:43                              *
  ****************************************************************************/
 
 import { CommonModule } from '@angular/common';
@@ -29,7 +29,7 @@ interface IExperienceItem {
 export class ExperiencesSection {
   public xp: IExperienceItem[] = [{
     title: "XP1TITLE",
-    company: "XP1COMPANY",
+    company: "Half Square",
     startDate: "XP1STARTDATE",
     description: "XP1DESCRIPTION",
     context: "XP1CONTEXT",
@@ -37,8 +37,9 @@ export class ExperiencesSection {
     stack: ["React", "Angular", "Node.js", "TypeScript", "NestJS", "Prisma", "Docker"]
   }, {
     title: "XP2TITLE",
-    company: "XP2COMPANY",
+    company: "GCE Electronics",
     startDate: "XP2STARTDATE",
+    endDate: "XP2ENDDATE",
     description: "XP2DESCRIPTION",
     context: "XP2CONTEXT",
     dots: ["XP2DOT1", "XP2DOT2", "XP2DOT3", "XP2DOT4", "XP2DOT5", "XP2DOT6"],
