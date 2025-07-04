@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-04 13:33:11                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-04 15:06:00                              *
+ * @LastEditDate          : 2025-07-04 15:16:56                              *
  ****************************************************************************/
 
 @import '../../../variables';
@@ -72,29 +72,25 @@
       margin-top: $pad-high;
 
       .contact-card {
-        box-shadow: $shadow;
-      }
+        width: fit-content;
+        padding: $pad-small $pad-light;
+        transition: transform $trans;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        a {
+          text-decoration: none;
+          font-weight: bold;
+        }
+    }
     }
 
     .profile-description {
       display: flex;
       flex-direction: column;
       gap: $pad-small;
-    }
-
-    .contact-card {
-      border: 2px solid $c-green-light;
-      width: fit-content;
-      padding: $pad-small $pad-light;
-      transition: transform $trans;
-
-      &:hover {
-        transform: scale(1.05);
-      }
-
-      a {
-        text-decoration: none;
-      }
     }
   }
 }

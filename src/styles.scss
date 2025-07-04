@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-04 14:22:13                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-04 14:59:10                              *
+ * @LastEditDate          : 2025-07-04 15:11:32                              *
  ****************************************************************************/
 
 @import "./variables.scss";
@@ -14,10 +14,21 @@
   font-family: $font-fam;
 }
 
-h1 { font-size: $fs-h1; }
-h2 { font-size: $fs-h2; }
-h3 { font-size: $fs-h3; }
-h4 { font-size: $fs-h4; }
+h1 {
+  font-size: $fs-h1;
+}
+
+h2 {
+  font-size: $fs-h2;
+}
+
+h3 {
+  font-size: $fs-h3;
+}
+
+h4 {
+  font-size: $fs-h4;
+}
 
 .gradient {
   background: $c-gradient;
@@ -32,7 +43,7 @@ h4 { font-size: $fs-h4; }
 }
 
 .gradient-border-dark {
-  background: linear-gradient($c-green-dark, $c-green-dark) padding-box, linear-gradient(to right, #68B952 3.34%, #52ADB9 66.83%, #5A52B9 94.29%) border-box;
+  background: linear-gradient(#000, #000) padding-box, linear-gradient(to right, #68B952 3.34%, #52ADB9 66.83%, #5A52B9 94.29%) border-box;
   border: 3px solid transparent;
   transition: $trans;
 }
