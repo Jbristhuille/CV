@@ -1,0 +1,21 @@
+/*****************************************************************************
+ * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
+ * @CreatedDate           : 2025-07-04 18:46:20                              *
+ * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
+ * @LastEditDate          : 2025-07-04 18:47:35                              *
+ ****************************************************************************/
+
+@import "../variables.scss";
+
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: $pad-med;
+  padding: $pad-high;
+
+  .side-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: $pad-light;
+  }
+}
