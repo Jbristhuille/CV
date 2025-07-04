@@ -1,1 +1,30 @@
-<p>experiences works!</p>
+<!--
+* @Author                : Jbristhuille<jbristhuille@gmail.com>
+* @CreatedDate           : 2025-07-03 21:28:00
+* @LastEditors           : Jbristhuille<jbristhuille@gmail.com>
+* @LastEditDate          : 2025-07-04 13:23:39
+-->
+
+<div class="section-experiences">
+  <h2>{{"EXPERIENCES" | translate}}</h2>
+
+  <div class="experiences-list">
+    <div *ngFor="let item of xp">
+      <h3>{{item.title | translate}}</h3>
+
+      <div>
+        <span>{{item.endDate ? "FROM" : "SINCE" | translate}} {{item.startDate | translate}}</span>
+        <span *ngIf="item.endDate">{{"TO" | translate}} {{item.endDate | translate}}</span>
+      </div>
+
+      <div>
+        <p>{{item.context | translate}}</p>
+        <p>{{item.description | translate}}</p>
+
+        <ul>
+          <li *ngFor="let dot of item.dots">{{dot | translate}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

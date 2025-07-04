@@ -2,15 +2,19 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-03 21:09:09                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-03 21:16:23                              *
+ * @LastEditDate          : 2025-07-03 21:27:21                              *
  ****************************************************************************/
 
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { ExperiencesSection } from './sections/experiences/experiences.section';
 
 @Component({
   selector: 'app-root',
-  imports: [TranslateModule],
+  imports: [
+    TranslateModule,
+    ExperiencesSection
+  ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

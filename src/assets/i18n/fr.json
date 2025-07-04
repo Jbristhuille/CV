@@ -1,4 +1,28 @@
 {
-  "HELLO": "Bonjour",
-  "TEST": "Ceci est une traduction de test"
+  "EXPERIENCES": "Expériences",
+  "FROM": "De",
+  "SINCE": "Depuis",
+  "TO": "À",
+  "XP1TITLE": "Architecte logiciel et développeur full-stack",
+  "XP1COMPAGNY": "Half Square",
+  "XP1STARTDATE": "Juin 2022",
+  "XP1DESCRIPTION": "Rôle transverse en architecture logicielle, pilotage technique et développement fullstack",
+  "XP1CONTEXT": "Bureau d’étude spécialisé dans le développement de solutions web sur-mesure.",
+  "XP1DOT1": "Conception d’architectures robustes, scalables et maintenables",
+  "XP1DOT2": "Lead technique sur projets clients & internes (méthodes, revues, CI/CD)",
+  "XP1DOT3": "Encadrement du développement de solutions logicielles (web & mobile)",
+  "XP1DOT4": "Lancement de projets open source internes (Statch, EvonaPulse, etc...)",
+  "XP2TITLE": "Développeur fullstack & embarqué",
+  "XP2COMPAGNY": "GCE Electronics",
+  "XP2STARTDATE": "Mai 2019",
+  "XP2ENDDATE": "Décembre 2021",
+  "XP2DESCRIPTION": "Développement d’interfaces web embarquées et refonte applicative",
+  "XP2CONTEXT": "Entreprise spécialisée en domotique et automatisation",
+  "XP2DOT1": "Développement fullstack pour produits connectés (IoT)",
+  "XP2DOT2": "Refonte d’applications legacy (web et mobile)",
+  "XP2DOT3": "Participation aux choix techniques et à l’architecture logicielle",
+  "XP2DOT4": "Déploiement Android/iOS, documentation et support produit",
+  "XP2DOT5": "Collaboration avec les équipes hardware pour l'intégration des solutions",
+  "XP2DOT6": "Supervision de stagiaires et passation aux nouveaux arrivants"
 }
+
