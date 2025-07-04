@@ -2,15 +2,15 @@
 * @Author                : Jbristhuille<jbristhuille@gmail.com>
 * @CreatedDate           : 2025-07-03 21:28:00
 * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>
-* @LastEditDate          : 2025-07-04 13:40:03
+* @LastEditDate          : 2025-07-04 13:46:41
 -->
 
 <div class="section-experiences">
-  <h2>{{"EXPERIENCES" | translate}}</h2>
+  <h3>{{"EXPERIENCES" | translate}}</h3>
 
   <div class="experiences-list">
     <div *ngFor="let item of xp">
-      <h3>{{item.title | translate}}</h3>
+      <h4>{{item.title | translate}}</h4>
 
       <div>
         <span>{{item.endDate ? "FROM" : "SINCE" | translate}} {{item.startDate | translate}}</span>
