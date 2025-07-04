@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-04 13:49:25                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-04 13:53:37                              *
+ * @LastEditDate          : 2025-07-04 13:55:47                              *
  ****************************************************************************/
 
 import { CommonModule } from '@angular/common';
@@ -30,5 +30,14 @@ export class SkillsSection {
   }, {
     title: "Languages",
     skills: ["Typescript", "JavaScript", "Python", "Java", "Rust"]
+  }, {
+    title: "DevOps",
+    skills: ["Docker", "Git", "CI/CD", "VPS"]
+  }, {
+    title: "Databases",
+    skills: ["SQLite", "MySQL", "MongoDB", "Prisma"]
+  }, {
+    title: "Tools",
+    skills: ["GitHub", "GitLab", "Jira", "Trello", "Linear"]
   }]
 }
