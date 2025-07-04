@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-03 21:28:39                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-04 13:27:16                              *
+ * @LastEditDate          : 2025-07-04 13:40:52                              *
  ****************************************************************************/
 
 import { CommonModule } from '@angular/common';
@@ -16,7 +16,8 @@ interface IExperienceItem {
   endDate?: string,
   description: string
   context: string,
-  dots: string[]
+  dots: string[],
+  stack: string[]
 }
 
 @Component({
@@ -32,13 +33,15 @@ export class ExperiencesSection {
     startDate: "XP1STARTDATE",
     description: "XP1DESCRIPTION",
     context: "XP1CONTEXT",
-    dots: ["XP1DOT1", "XP1DOT2", "XP1DOT3", "XP1DOT4"]
+    dots: ["XP1DOT1", "XP1DOT2", "XP1DOT3", "XP1DOT4"],
+    stack: ["React", "Angular", "Node.js", "TypeScript", "NestJS", "Prisma", "Docker"]
   }, {
     title: "XP2TITLE",
     company: "XP2COMPANY",
     startDate: "XP2STARTDATE",
     description: "XP2DESCRIPTION",
     context: "XP2CONTEXT",
-    dots: ["XP2DOT1", "XP2DOT2", "XP2DOT3", "XP2DOT4", "XP2DOT5", "XP2DOT6"]
+    dots: ["XP2DOT1", "XP2DOT2", "XP2DOT3", "XP2DOT4", "XP2DOT5", "XP2DOT6"],
+    stack: ["Angular", "Node.js", "TypeScript", "NestJS", "MongoDB"]
   }]
 }

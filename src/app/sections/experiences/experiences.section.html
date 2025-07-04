@@ -2,7 +2,7 @@
 * @Author                : Jbristhuille<jbristhuille@gmail.com>
 * @CreatedDate           : 2025-07-03 21:28:00
 * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>
-* @LastEditDate          : 2025-07-04 13:23:39
+* @LastEditDate          : 2025-07-04 13:40:03
 -->
 
 <div class="section-experiences">
@@ -24,6 +24,12 @@
         <ul>
           <li *ngFor="let dot of item.dots">{{dot | translate}}</li>
         </ul>
+      </div>
+
+      <div>
+        <b>Stack:</b>
+
+        <p>{{item.stack.join(', ')}}</p>
       </div>
     </div>
   </div>
