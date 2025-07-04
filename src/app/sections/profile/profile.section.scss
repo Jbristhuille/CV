@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-04 13:33:11                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-04 15:16:56                              *
+ * @LastEditDate          : 2025-07-04 15:19:43                              *
  ****************************************************************************/
 
 @import '../../../variables';
@@ -91,6 +91,10 @@
       display: flex;
       flex-direction: column;
       gap: $pad-small;
+
+      p {
+        color: $c-white;
+      }
     }
   }
 }

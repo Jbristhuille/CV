@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-04 14:22:13                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-04 15:11:32                              *
+ * @LastEditDate          : 2025-07-04 15:19:06                              *
  ****************************************************************************/
 
 @import "./variables.scss";
@@ -12,23 +12,13 @@
   padding: 0;
   font-size: $fs-default;
   font-family: $font-fam;
+  color: $c-black;
 }
 
-h1 {
-  font-size: $fs-h1;
-}
-
-h2 {
-  font-size: $fs-h2;
-}
-
-h3 {
-  font-size: $fs-h3;
-}
-
-h4 {
-  font-size: $fs-h4;
-}
+h1 { font-size: $fs-h1; }
+h2 { font-size: $fs-h2; }
+h3 { font-size: $fs-h3; }
+h4 { font-size: $fs-h4; }
 
 .gradient {
   background: $c-gradient;
