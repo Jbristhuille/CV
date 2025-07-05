@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-05 14:11:27                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-05 15:12:06                              *
+ * @LastEditDate          : 2025-07-05 15:21:46                              *
  ****************************************************************************/
 
 @use "../../../variables.scss" as *;
@@ -44,5 +44,9 @@
     display: flex;
     align-items: center;
     gap: $pad-light;
+  }
+
+  @media screen and (max-width: $res-med) {
+    justify-content: center;
   }
 }

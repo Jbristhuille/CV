@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-04 13:33:11                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-05 13:59:29                              *
+ * @LastEditDate          : 2025-07-05 15:21:00                              *
  ****************************************************************************/
 
 @use '../../../variables' as *;
@@ -15,11 +15,11 @@
   display: grid;
   gap: $pad-med;
   grid-template-columns: 1fr 3fr;
+  // background-color: red;
 
   .grid-background {
     position: absolute;
     width: 100%;
-    transform: translateY(-25%);
     z-index: -1;
     background-color: $c-green-dark;
   }
@@ -95,6 +95,12 @@
       p {
         color: $c-white;
       }
+    }
+  }
+
+  @media screen and (max-width: $res-med) {
+    .contact-cards-container {
+      margin-top: 0 !important;
     }
   }
 }

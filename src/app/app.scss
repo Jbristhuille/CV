@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-04 18:46:20                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-05 13:58:54                              *
+ * @LastEditDate          : 2025-07-05 15:21:33                              *
  ****************************************************************************/
 
 @use "../variables.scss" as *;
@@ -24,5 +24,27 @@
     background-color: $c-black;
     height: 100%;
     margin: 0 auto;
+  }
+
+  @media screen and (max-width: $res-med) {
+    grid-template-columns: 1fr;
+
+    .separator {
+      width: 100%;
+      height: 1px;
+      order: 2
+    }
+
+    .side-content-container {
+      order: 3;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: $pad-high;
+
+      *:nth-child(2) {
+        order: -1;
+        grid-row: span 2;
+      }
+    }
   }
 }
