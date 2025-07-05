@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-05 14:34:57                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-05 14:38:43                              *
+ * @LastEditDate          : 2025-07-05 14:48:42                              *
  ****************************************************************************/
 
 @use "../../../variables.scss" as *;
@@ -47,7 +47,9 @@
 
       &.selected {
         font-weight: bold;
-        color: $c-green-light;
+        background: $c-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     }
   }
