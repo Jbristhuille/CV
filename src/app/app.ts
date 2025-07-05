@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-03 21:09:09                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-04 13:57:53                              *
+ * @LastEditDate          : 2025-07-05 13:56:12                              *
  ****************************************************************************/
 
 import { Component } from '@angular/core';
@@ -12,6 +12,7 @@ import { ProfileSection } from './sections/profile/profile.section';
 import { LanguagesSection } from './sections/languages/languages.section';
 import { SkillsSection } from './sections/skills/skills.section';
 import { EducationSection } from './sections/education/education.section';
+import { FooterSection } from './sections/footer/footer.section';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,8 @@ import { EducationSection } from './sections/education/education.section';
     ProfileSection,
     LanguagesSection,
     SkillsSection,
-    EducationSection
+    EducationSection,
+    FooterSection
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'

@@ -1,0 +1,52 @@
+/*****************************************************************************
+ * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
+ * @CreatedDate           : 2025-07-05 14:11:27                              *
+ * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
+ * @LastEditDate          : 2025-07-05 15:21:46                              *
+ ****************************************************************************/
+
+@use "../../../variables.scss" as *;
+
+.section-footer {
+  background-color: $c-green-dark;
+  padding: $pad-light $pad-med;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: $pad-med;
+
+  span {
+    color: $c-white;
+  }
+
+  .source-link {
+    width: fit-content;
+    padding: $pad-small;
+    transition: transform $trans;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+
+      svg * {
+        color: $c-green-light !important;
+      }
+    }
+  }
+
+  .language-switcher {
+    display: flex;
+    align-items: center;
+    gap: $pad-light;
+  }
+
+  @media screen and (max-width: $res-med) {
+    justify-content: center;
+  }
+}

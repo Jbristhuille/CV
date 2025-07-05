@@ -2,10 +2,10 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-04 14:22:13                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-04 15:20:26                              *
+ * @LastEditDate          : 2025-07-05 15:57:37                              *
  ****************************************************************************/
 
-@import "./variables.scss";
+@use "./variables.scss" as *;
 
 * {
   margin: 0;
@@ -13,26 +13,46 @@
   font-size: $fs-default;
   font-family: $font-fam;
   color: $c-black;
+
+    @media screen and (max-width: $res-small) {
+    font-size: $fs-default-mobile;
+  }
 }
 
 h1 {
   font-size: $fs-h1;
   width: fit-content;
+
+  @media screen and (max-width: $res-small) {
+    font-size: $fs-h1-mobile;
+  }
 }
 
 h2 {
   font-size: $fs-h2;
   width: fit-content;
+
+  @media screen and (max-width: $res-small) {
+    font-size: $fs-h2-mobile;
+  }
 }
 
 h3 {
   font-size: $fs-h3;
   width: fit-content;
+
+  @media screen and (max-width: $res-small) {
+    font-size: $fs-h3-mobile;
+  }
 }
 
 h4 {
   font-size: $fs-h4;
   width: fit-content;
+
+  @media screen and (max-width: $res-small) {
+    font-size: $fs-h4-mobile;
+  }
 }
 
 .gradient {
@@ -48,7 +68,7 @@ h4 {
 }
 
 .gradient-border-dark {
-  background: linear-gradient(#000, #000) padding-box, linear-gradient(to right, #68B952 3.34%, #52ADB9 66.83%, #5A52B9 94.29%) border-box;
+  background: linear-gradient($c-green-dark, $c-green-dark) padding-box, linear-gradient(to right, #68B952 3.34%, #52ADB9 66.83%, #5A52B9 94.29%) border-box;
   border: 1px solid transparent;
   transition: $trans;
 }

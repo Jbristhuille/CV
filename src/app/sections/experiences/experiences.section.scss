@@ -2,10 +2,10 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-04 18:48:52                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-04 19:16:35                              *
+ * @LastEditDate          : 2025-07-05 15:25:49                              *
  ****************************************************************************/
 
-@import "../../../variables.scss";
+@use "../../../variables.scss" as *;
 
 .section-experiences {
   h3 {
@@ -51,7 +51,29 @@
       .item-skills {
         display: flex;
         gap: $pad-small;
-        flex-wrap: wrap;
+
+        p {
+          word-break: break-all;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $res-small) {
+    .experiences-list {
+      .experience-item {
+        .item-header {
+          flex-direction: column;
+          align-items: flex-start;
+
+          .item-date {
+            margin-top: $pad-small;
+          }
+        }
+
+        .item-content {
+          margin-top: 0;
+        }
       }
     }
   }

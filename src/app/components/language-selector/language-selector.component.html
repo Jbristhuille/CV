@@ -1,0 +1,22 @@
+<!--
+* @Author                : Jbristhuille<jbristhuille@gmail.com>
+* @CreatedDate           : 2025-07-05 14:32:00
+* @LastEditors           : Jbristhuille<jbristhuille@gmail.com>
+* @LastEditDate          : 2025-07-05 14:47:59
+-->
+
+<div class="language-selector" clickOutside (clickOutside)="showOptions = false">
+  <div class="gradient-border-dark">
+    <button class="selector-display gradient" (click)="toggleOptions()">
+      {{ currentLabel }} ▾
+    </button>
+  </div>
+
+  <ul class="selector-options" *ngIf="showOptions">
+    <li *ngFor="let lang of languages"
+        [class.selected]="lang.code === selected"
+        (click)="selectLanguage(lang.code)">
+      {{ lang.label }}
+    </li>
+  </ul>
+</div>
