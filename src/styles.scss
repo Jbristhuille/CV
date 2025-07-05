@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-04 14:22:13                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-05 14:37:46                              *
+ * @LastEditDate          : 2025-07-05 15:57:37                              *
  ****************************************************************************/
 
 @use "./variables.scss" as *;
@@ -13,26 +13,46 @@
   font-size: $fs-default;
   font-family: $font-fam;
   color: $c-black;
+
+    @media screen and (max-width: $res-small) {
+    font-size: $fs-default-mobile;
+  }
 }
 
 h1 {
   font-size: $fs-h1;
   width: fit-content;
+
+  @media screen and (max-width: $res-small) {
+    font-size: $fs-h1-mobile;
+  }
 }
 
 h2 {
   font-size: $fs-h2;
   width: fit-content;
+
+  @media screen and (max-width: $res-small) {
+    font-size: $fs-h2-mobile;
+  }
 }
 
 h3 {
   font-size: $fs-h3;
   width: fit-content;
+
+  @media screen and (max-width: $res-small) {
+    font-size: $fs-h3-mobile;
+  }
 }
 
 h4 {
   font-size: $fs-h4;
   width: fit-content;
+
+  @media screen and (max-width: $res-small) {
+    font-size: $fs-h4-mobile;
+  }
 }
 
 .gradient {

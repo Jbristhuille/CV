@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-04 13:33:11                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-05 15:50:57                              *
+ * @LastEditDate          : 2025-07-05 15:58:26                              *
  ****************************************************************************/
 
 @use '../../../variables' as *;
@@ -63,7 +63,6 @@
       flex-direction: column;
 
       h1 {
-        font-size: $fs-h1;
         width: fit-content;
         text-shadow: $shadow;
       }
@@ -138,10 +137,20 @@
     }
 
     .right {
-      .contact-cards-container {
+      .social-container {
         flex-direction: column;
         align-items: center;
-        align-self: center;
+        gap: $pad-small;
+
+        .social-bubble {
+          margin-bottom: $pad-small;
+        }
+
+        .contact-cards-container {
+          flex-direction: column;
+          align-items: center;
+          align-self: center;
+        }
       }
     }
   }

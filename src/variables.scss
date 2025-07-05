@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2024-02-26 16:39:19                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-05 15:22:24                              *
+ * @LastEditDate          : 2025-07-05 15:58:33                              *
  ****************************************************************************/
 
 /* SUMMARY
@@ -24,6 +24,7 @@ $pad-big-2: 248px;
 
 /* Fonts */
 $fs-default: 14px;
+$fs-default-mobile: 12px;
 $fs-med: 12px;
 $fs-small: 9px;
 $fs-big: 128px;
@@ -31,6 +32,10 @@ $fs-h1: 48px;
 $fs-h2: 34px;
 $fs-h3: 24px;
 $fs-h4: 18px;
+$fs-h1-mobile: 36px;
+$fs-h2-mobile: 26px;
+$fs-h3-mobile: 20px;
+$fs-h4-mobile: 16px;
 $font-fam: "Work Sans", sans-serif;
 /***/
 
@@ -54,5 +59,5 @@ $shadow: 2px 2px 8px rgba($c-green-light, 0.3);
 
 /* Responsive */
 $res-med: 1080px;
-$res-small: 750px;
+$res-small: 795px;
 /***/
