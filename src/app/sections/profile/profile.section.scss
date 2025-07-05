@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-04 13:33:11                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-05 15:29:51                              *
+ * @LastEditDate          : 2025-07-05 15:50:57                              *
  ****************************************************************************/
 
 @use '../../../variables' as *;
@@ -26,9 +26,13 @@
     left: 0;
     bottom: 0;
     right: 0;
+    z-index: 1
   }
 
   .left {
+    position: relative;
+    z-index: 2;
+
     .profile-picture-container {
       margin: auto;
       width: 80%;
@@ -47,6 +51,8 @@
   }
 
   .right {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     gap: $pad-med;
@@ -69,26 +75,38 @@
       }
     }
 
-    .contact-cards-container {
+    .social-container {
       display: flex;
-      gap: $pad-light;
-      align-self: flex-end;
+      align-items: center;
       margin-top: $pad-high;
+      justify-content: space-between;
 
-      .contact-card {
-        width: fit-content;
-        padding: $pad-small $pad-light;
-        transition: transform $trans;
+      .social-bubble {
+        display: flex;
+        gap: $pad-light;
+        align-items: center;
+        justify-content: center;
+      }
 
-        &:hover {
-          transform: scale(1.05);
+      .contact-cards-container {
+        display: flex;
+        gap: $pad-light;
+
+        .contact-card {
+          width: fit-content;
+          padding: $pad-small $pad-light;
+          transition: transform $trans;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+
+          a {
+            text-decoration: none;
+            font-weight: bold;
+          }
         }
-
-        a {
-          text-decoration: none;
-          font-weight: bold;
-        }
-    }
+      }
     }
 
     .profile-description {
@@ -103,7 +121,7 @@
   }
 
   @media screen and (max-width: $res-med) {
-    .contact-cards-container {
+    .social-container {
       margin-top: 0 !important;
     }
   }

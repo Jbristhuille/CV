@@ -1,0 +1,26 @@
+/*****************************************************************************
+ * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
+ * @CreatedDate           : 2025-07-05 15:43:46                              *
+ * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
+ * @LastEditDate          : 2025-07-05 15:49:51                              *
+ ****************************************************************************/
+
+@use "../../../variables" as *;
+
+a {
+  display: block;
+  transition: transform $trans;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  svg * {
+    color: $c-white;
+  }
+}
