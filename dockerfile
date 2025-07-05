@@ -3,7 +3,7 @@ FROM node:22.17-alpine AS builder
 WORKDIR /app
 
 RUN apk add --no-cache git
-RUN git clone https://github.com/jbristhuille/cv.git .
+RUN git clone --depth 1 --branch main https://github.com/jbristhuille/cv.git .
 
 RUN npm install
 RUN npm run build -- --configuration production
