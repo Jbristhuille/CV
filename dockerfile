@@ -1,8 +1,11 @@
 FROM node:22.17-alpine AS builder
+
 WORKDIR /app
-COPY package*.json ./
+
+RUN apk add --no-cache git
+RUN git clone https://github.com/jbristhuille/cv.git .
+
 RUN npm install
-COPY . .
 RUN npm run build -- --configuration production
 
 FROM nginx:alpine
