@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-04 13:33:11                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-05 15:21:00                              *
+ * @LastEditDate          : 2025-07-05 15:29:51                              *
  ****************************************************************************/
 
 @use '../../../variables' as *;
@@ -10,18 +10,22 @@
 .section-profile {
   color: $c-white;
   padding: $pad-med $pad-high;
-  position: relative;
   overflow: hidden;
   display: grid;
   gap: $pad-med;
   grid-template-columns: 1fr 3fr;
-  // background-color: red;
+  background-color: $c-green-dark;
+  position: relative;
 
   .grid-background {
     position: absolute;
-    width: 100%;
-    z-index: -1;
-    background-color: $c-green-dark;
+    background-image: url("/imgs/grid-background.png");
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 
   .left {
@@ -101,6 +105,26 @@
   @media screen and (max-width: $res-med) {
     .contact-cards-container {
       margin-top: 0 !important;
+    }
+  }
+
+  @media screen and (max-width: $res-small) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: $pad-small;
+
+    .left {
+      .profile-picture-container {
+        display: none;
+      }
+    }
+
+    .right {
+      .contact-cards-container {
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+      }
     }
   }
 }

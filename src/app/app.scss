@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-04 18:46:20                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-05 15:21:33                              *
+ * @LastEditDate          : 2025-07-05 15:23:21                              *
  ****************************************************************************/
 
 @use "../variables.scss" as *;
@@ -45,6 +45,14 @@
         order: -1;
         grid-row: span 2;
       }
+    }
+  }
+
+  @media screen and (max-width: $res-small) {
+    .side-content-container {
+      display: flex;
+      flex-direction: column;
+      gap: $pad-med;
     }
   }
 }
