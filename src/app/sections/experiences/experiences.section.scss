@@ -2,10 +2,10 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-04 18:48:52                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-04 19:16:35                              *
+ * @LastEditDate          : 2025-07-05 13:58:43                              *
  ****************************************************************************/
 
-@import "../../../variables.scss";
+@use "../../../variables.scss" as *;
 
 .section-experiences {
   h3 {

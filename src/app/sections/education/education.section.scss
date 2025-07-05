@@ -2,10 +2,10 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-04 19:09:59                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-04 19:10:05                              *
+ * @LastEditDate          : 2025-07-05 13:58:33                              *
  ****************************************************************************/
 
-@import "../../../variables.scss";
+@use "../../../variables.scss" as *;
 
 .section-education {
   h3 {
