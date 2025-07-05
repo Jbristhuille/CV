@@ -20,5 +20,6 @@ jobs:
         script: |
           docker stop cv || true
           docker rm cv || true
-          docker build -t jbristhuille/cv /root/autobuild/cv
+          cd /srv/docker-cv
+          docker build -t jbristhuille/cv .
           docker run -d --name cv --restart always -p 8080:80 jbristhuille/cv:latest
