@@ -1,0 +1,23 @@
+/*****************************************************************************
+ * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
+ * @CreatedDate           : 2025-07-05 14:11:27                              *
+ * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
+ * @LastEditDate          : 2025-07-05 14:29:53                              *
+ ****************************************************************************/
+
+@use "../../../variables.scss" as *;
+
+.section-footer {
+  background-color: $c-green-dark;
+  padding: $pad-light $pad-med;
+
+  span {
+    color: $c-white;
+  }
+
+  .language-switcher {
+    display: flex;
+    align-items: center;
+    gap: $pad-light;
+  }
+}

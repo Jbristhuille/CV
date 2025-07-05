@@ -1,0 +1,54 @@
+/*****************************************************************************
+ * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
+ * @CreatedDate           : 2025-07-05 14:34:57                              *
+ * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
+ * @LastEditDate          : 2025-07-05 14:38:43                              *
+ ****************************************************************************/
+
+@use "../../../variables.scss" as *;
+
+.language-selector {
+  position: relative;
+  display: inline-block;
+
+  .selector-display {
+    border: none;
+    background-color: transparent;
+    color: $c-white;
+    padding: 6px 12px;
+    font-family: 'Segoe UI', sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .selector-options {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: 10;
+    background-color: $c-green-dark;
+    border: 1px solid $c-black;
+    border-radius: 4px;
+    margin-top: 4px;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+    li {
+      padding: 8px 12px;
+      color: #f5f5f5;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $c-green-light;
+        color: $c-white !important;
+      }
+
+      &.selected {
+        font-weight: bold;
+        color: $c-green-light;
+      }
+    }
+  }
+}

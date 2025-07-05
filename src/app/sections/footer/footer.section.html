@@ -1,0 +1,15 @@
+<!--
+* @Author                : Jbristhuille<jbristhuille@gmail.com>
+* @CreatedDate           : 2025-07-05 13:56:00
+* @LastEditors           : Jbristhuille<jbristhuille@gmail.com>
+* @LastEditDate          : 2025-07-05 14:33:19
+-->
+
+<div class="section-footer">
+  <div class="language-switcher">
+    <span>{{"LANGUAGE" | translate }}:</span>
+
+    <component-language-selector  [selected]="currentLang"
+                                  (languageChanged)="onLanguageChange($event)"/>
+  </div>
+</div>
