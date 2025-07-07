@@ -2,37 +2,43 @@
 * @Author                : Jbristhuille<jbristhuille@gmail.com>
 * @CreatedDate           : 2025-07-05 13:56:00
 * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>
-* @LastEditDate          : 2025-07-05 15:12:22
+* @LastEditDate          : 2025-07-07 15:20:08
 -->
 
 <div class="section-footer">
-  <div class="language-switcher">
-    <span>{{"LANGUAGE" | translate }}:</span>
+  <button (click)="downloadCV()" class="dl-button gradient-border-dark">
+    <p class="gradient">{{"DOWNLOAD" | translate}}</p>
+  </button>
 
-    <component-language-selector  [selected]="currentLang"
-                                  (languageChanged)="onLanguageChange($event)"/>
-  </div>
+  <div class="right">
+    <div class="language-switcher">
+      <span>{{"LANGUAGE" | translate }}:</span>
 
-  <div class="source-link gradient-border-dark">
-    <a  href="https://github.com/Jbristhuille/CV"
-        target="_blank"
-        class="gradient">
-      {{"SOURCE" | translate}}
-        <svg  xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="12"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              style="margin-left: 6px;">
-        <path d="M18 3h3v3" />
-        <path d="M11 13l9-9" />
-        <path d="M15 3h6v6" />
-        <path d="M21 21H3V3" />
-        </svg>
-    </a>
+      <component-language-selector  [selected]="currentLang"
+                                    (languageChanged)="onLanguageChange($event)"/>
+    </div>
+
+    <div class="source-link gradient-border-dark">
+      <a  href="https://github.com/Jbristhuille/CV"
+          target="_blank"
+          class="gradient">
+        {{"SOURCE" | translate}}
+          <svg  xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="margin-left: 6px;">
+          <path d="M18 3h3v3" />
+          <path d="M11 13l9-9" />
+          <path d="M15 3h6v6" />
+          <path d="M21 21H3V3" />
+          </svg>
+      </a>
+    </div>
   </div>
 </div>
