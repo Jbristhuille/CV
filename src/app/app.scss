@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-04 18:46:20                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-05 15:23:21                              *
+ * @LastEditDate          : 2025-07-07 13:38:01                              *
  ****************************************************************************/
 
 @use "../variables.scss" as *;
@@ -49,6 +49,8 @@
   }
 
   @media screen and (max-width: $res-small) {
+    padding: $pad-med;
+    
     .side-content-container {
       display: flex;
       flex-direction: column;
