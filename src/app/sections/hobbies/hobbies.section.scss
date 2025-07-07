@@ -1,0 +1,29 @@
+/*****************************************************************************
+ * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
+ * @CreatedDate           : 2025-07-07 13:32:46                              *
+ * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
+ * @LastEditDate          : 2025-07-07 13:34:04                              *
+ ****************************************************************************/
+
+@use "../../../variables.scss" as *;
+
+.section-hobbies {
+  h3 {
+    margin-bottom: $pad-small;
+  }
+
+  .hobbies-list {
+    display: flex;
+    flex-direction: column;
+    gap: $pad-small;
+
+    .hobby-item {
+      display: flex;
+      gap: $pad-small;
+
+      .hobby-icon {
+        width: 20px;
+      }
+    }
+  }
+}

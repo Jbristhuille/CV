@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-03 21:28:39                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-04 18:58:43                              *
+ * @LastEditDate          : 2025-07-07 13:02:17                              *
  ****************************************************************************/
 
 import { CommonModule } from '@angular/common';
@@ -33,7 +33,7 @@ export class ExperiencesSection {
     startDate: "XP1STARTDATE",
     description: "XP1DESCRIPTION",
     context: "XP1CONTEXT",
-    dots: ["XP1DOT1", "XP1DOT2", "XP1DOT3", "XP1DOT4"],
+    dots: ["XP1DOT1", "XP1DOT2", "XP1DOT3", "XP1DOT4", "XP1DOT5"],
     stack: ["React", "Angular", "Node.js", "TypeScript", "NestJS", "Prisma", "Docker"]
   }, {
     title: "XP2TITLE",
