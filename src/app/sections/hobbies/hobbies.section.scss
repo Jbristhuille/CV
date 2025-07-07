@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-07 13:32:46                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-07 13:34:04                              *
+ * @LastEditDate          : 2025-07-07 13:51:15                              *
  ****************************************************************************/
 
 @use "../../../variables.scss" as *;
@@ -19,6 +19,7 @@
 
     .hobby-item {
       display: flex;
+      align-items: center;
       gap: $pad-small;
 
       .hobby-icon {

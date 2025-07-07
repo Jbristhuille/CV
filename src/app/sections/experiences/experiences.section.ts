@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-03 21:28:39                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-07 13:02:17                              *
+ * @LastEditDate          : 2025-07-07 13:52:17                              *
  ****************************************************************************/
 
 import { CommonModule } from '@angular/common';
@@ -44,5 +44,14 @@ export class ExperiencesSection {
     context: "XP2CONTEXT",
     dots: ["XP2DOT1", "XP2DOT2", "XP2DOT3", "XP2DOT4", "XP2DOT5", "XP2DOT6"],
     stack: ["Angular", "Node.js", "TypeScript", "NestJS", "MongoDB"]
+  }, {
+    title: "XP3TITLE",
+    company: "Bouygues Telecom",
+    startDate: "XP3STARTDATE",
+    endDate: "XP3ENDDATE",
+    description: "XP3DESCRIPTION",
+    context: "XP3CONTEXT",
+    dots: ["XP3DOT1", "XP3DOT2", "XP3DOT3"],
+    stack: []
   }]
 }
