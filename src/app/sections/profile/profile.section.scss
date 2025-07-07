@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-04 13:33:11                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-07 13:16:27                              *
+ * @LastEditDate          : 2025-07-07 13:39:59                              *
  ****************************************************************************/
 
 @use '../../../variables' as *;
@@ -129,6 +129,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     gap: $pad-small;
+    padding: $pad-light $pad-med;
 
     .left {
       .profile-picture-container {
@@ -137,6 +138,16 @@
     }
 
     .right {
+      .profile-header {
+        display: flex;
+        align-items: center;
+
+        h1 {
+          font-size: $fs-h3;
+          text-align: center;
+        }
+      }
+
       .social-container {
         flex-direction: column;
         align-items: center;
