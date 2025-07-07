@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-03 21:28:39                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-07 13:52:17                              *
+ * @LastEditDate          : 2025-07-07 14:06:43                              *
  ****************************************************************************/
 
 import { CommonModule } from '@angular/common';
@@ -17,7 +17,7 @@ interface IExperienceItem {
   description: string
   context: string,
   dots: string[],
-  stack: string[]
+  stack?: string[]
 }
 
 @Component({
@@ -51,7 +51,6 @@ export class ExperiencesSection {
     endDate: "XP3ENDDATE",
     description: "XP3DESCRIPTION",
     context: "XP3CONTEXT",
-    dots: ["XP3DOT1", "XP3DOT2", "XP3DOT3"],
-    stack: []
+    dots: ["XP3DOT1", "XP3DOT2", "XP3DOT3"]
   }]
 }
