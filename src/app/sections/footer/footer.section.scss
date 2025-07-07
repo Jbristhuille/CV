@@ -2,7 +2,7 @@
  * @Author                : Jbristhuille<jbristhuille@gmail.com>             *
  * @CreatedDate           : 2025-07-05 14:11:27                              *
  * @LastEditors           : Jbristhuille<jbristhuille@gmail.com>             *
- * @LastEditDate          : 2025-07-05 15:21:46                              *
+ * @LastEditDate          : 2025-07-07 15:20:56                              *
  ****************************************************************************/
 
 @use "../../../variables.scss" as *;
@@ -12,11 +12,27 @@
   padding: $pad-light $pad-med;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: $pad-med;
 
   span {
     color: $c-white;
+  }
+
+  .dl-button {
+    padding: $pad-small;
+    transition: transform $trans;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    gap: $pad-light;
   }
 
   .source-link {
